@@ -12,19 +12,22 @@ int main(void)
 
 	for (a = '0'; a < '9'; a++)
 	{
-		if (a != b)
+		for (b = a + 1; b <= '9'; b++)
 		{
-			putchar(a);
-			putchar(b);
+			if (a != b)
+			{
+				putchar(a);
+				putchar(b);
 
-			if (a == '8' && b == '9')
-				continue;
+				if (a == '8' && b == '9')
+					continue;
 
-			putchar(',');
-			putchar(' ');
+				putchar(',');
+				putchar(' ');
+			}
 		}
 	}
-}
-putchar('\n');
+	putchar('\n');
 
-return (0);
+	return (0);
+}
