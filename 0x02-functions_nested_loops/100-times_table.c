@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_times_table - This program prints the multiplication table of the input integer
+ * print_times_table - This program prints the times table of the input integer
  * @n: The value of the multiplication table to be printed
  */
 
