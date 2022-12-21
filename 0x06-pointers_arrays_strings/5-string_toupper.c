@@ -11,10 +11,10 @@ char	upper(char b)
 {
 	char	bat;
 
-	if (b >= 'a' && c <= 'z')
-		bat = c + 'A' - 'a';
+	if (b >= 'a' && b <= 'z')
+		bat = b + 'A' - 'a';
 	else
-		bat = c;
+		bat = b;
 	return (bat);
 }
 
