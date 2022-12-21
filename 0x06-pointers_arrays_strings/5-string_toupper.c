@@ -2,7 +2,7 @@
 
 /**
  * upper - a function that changes cases of letters
- * @c: the character
+ * @b: the character
  *
  * Return: 1 or 0.
  */
@@ -11,10 +11,10 @@ char	upper(char b)
 {
 	char	bat;
 
-	if (b >= 'a' && b <= 'z')
-		bat = b + 'A' - 'a';
+	if (b >= 'a' && c <= 'z')
+		bat = c + 'A' - 'a';
 	else
-		bat = b;
+		bat = c;
 	return (bat);
 }
 
