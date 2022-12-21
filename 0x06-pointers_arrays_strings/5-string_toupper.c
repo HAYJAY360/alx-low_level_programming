@@ -7,11 +7,11 @@
  * Return: 1 or 0.
  */
 
-char	upper(char c)
+char	upper(char b)
 {
 	char	bat;
 
-	if (b >= 'a' && c <= 'z')
+	if (b >= 'a' && b <= 'z')
 		bat = b + 'A' - 'a';
 	else
 		bat = b;
