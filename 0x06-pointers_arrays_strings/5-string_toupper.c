@@ -2,20 +2,20 @@
 
 /**
  * upper - a function that changes cases of letters
- * @b: the character
+ * @c: the character
  *
  * Return: 1 or 0.
  */
 
-char	upper(char b)
+char	upper(char c)
 {
-	char	bat;
+	char	car;
 
 	if (c >= 'a' && c <= 'z')
-		bat = c + 'A' - 'a';
+		car = c + 'A' - 'a';
 	else
-		bat = c;
-	return (bat);
+		car = c;
+	return (cat);
 }
 
 /**
