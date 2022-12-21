@@ -1,5 +1,6 @@
 #ifndef MAIN_H
 #define MAIN_H
+#include <stdio.h>
 
 /**
  * main.h - Header file containing the prototypes of all functions and the prototype of the function _putchar
