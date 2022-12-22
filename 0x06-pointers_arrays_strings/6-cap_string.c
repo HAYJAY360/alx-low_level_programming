@@ -1,22 +1,4 @@
-#include<stdio.h>
-
-/**
- * upper - a function that changes case of letters
- * @c: the character
- *
- * Return: 1 or 0
- */
-
-char	upper(char c)
-{
-	char	car;
-
-	if (c >= 'a' && c <= 'z')
-		car = c + 'A' - 'a';
-	else
-		car = c;
-	return (car);
-}
+#include "main.h"
 
 /**
  * cap_string - a function that capitalizes all words of a string
@@ -25,16 +7,32 @@ char	upper(char c)
  * Return: str
  */
 
-char	*cap_string(char *str)
+char *cap_string(char *str)
 {
-	int	i;
+	int i = 0;
 
 
-
-	i = 0;
 	while (str[i])
 	{
-		str[i] = upper(str[i]);
+		while (!(str[i] >= 'a' && str[i] <= 'z'))
+			i++;
+
+		if (str[i - 1] == ' ' ||
+			str[i - 1] == '\t' ||
+			str[i - 1] == '\n' ||
+			str[i - 1] == ',' ||
+			str[i - 1] == ';' ||
+			str[i - 1] == '.' ||
+			str[i - 1] == '!' ||
+			str[i - 1] == '?' ||
+			str[i - 1] == '"' ||
+			str[i - 1] == '(' ||
+			str[i - 1] == ')' ||
+			str[i - 1] == '{' ||
+			str[i - 1] == '}' ||
+			i == 0)
+			str[i] -= 32
+
 		i++;
 	}
 	return (str);
