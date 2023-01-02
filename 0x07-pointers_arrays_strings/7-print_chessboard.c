@@ -7,6 +7,7 @@
  * Return: 1 or 0
  */
 
+
 void print_chessboard(char (*a)[8])
 {
 	int i = 0, j = 0;
