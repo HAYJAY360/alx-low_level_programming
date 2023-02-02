@@ -3,8 +3,8 @@
 #include <stdio.h>
 
 /**
- * get_bit - a function ....
- * @n: the chaine of caractere
+ * get_bit - a function
+ * @n: the character
  * @index: the number
  *
  * Return: 1 or 0
